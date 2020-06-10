@@ -1,12 +1,14 @@
+"use strict";
 
-$(function() {
-  $('#product2').each(function() {
+$(function () {
+  $('#product2').each(function () {
     var src_org = $(this).attr('src');
     var src_color = src_org.replace('product-2', 'product-2-color');
-    $(this).hover(function() {
+    $(this).hover(function () {
       $(this).attr('src', src_color);
-    }, function() {
+    }, function () {
       $(this).attr('src', src_org);
     });
   });
 });
+//# sourceMappingURL=all.js.map
